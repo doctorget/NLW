@@ -8,26 +8,36 @@
 </p> 
 
 <p align="center">
+  <a href="#bookmark-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#gear-tecnologias-utilizadas">:gear: Construção</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#heavy_check_mark-requesitos">:heavy_check_mark: Requesitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#arrow_forward-executando">:arrow_forward: Executando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-Proffy - Desenvolvido durante o evento NLW 2# by @Rocketseat
+## :bookmark: Sobre
 
-![Design sem nome (1)](https://user-images.githubusercontent.com/50588380/90249807-7cedf000-de11-11ea-8a5f-24e235b42057.jpg)
+O **Proffy** é uma aplicação Web e Mobile feita para auxiliar na conexão entre os alunos e os professores. Logo, esta aplicação oferece aos professores a possibilidade de registrar aulas, podendo adicionar informações como a disciplina, o custo e horário e aos alunos a possibilidade de buscar pelas aulas cadastradas.
+  
+Este projeto foi idealizado pensando no **6 de agosto**, onde se comemora o **Dia Nacional dos Profissionais da Educação**.
+  
+Essa aplicação foi realizada durante a Next **Level Week #2**, projeto da [Rocketseat](https://rocketseat.com.br/).
+
+
+<p align="center">
+  <img alt="design do projeto" width="650px" src="./.github/design.png" />
+<p>
+
 
 ## :gear: Tecnologias utilizadas:
 
-<details>
-    <summary>Server</summary>
-    <ul><li>NodeJs</li></ul>
-    <ul><li>TypeScript</li></ul>
-    <ul><li>Express</li></ul>
-    <ul><li>Cors</li></ul>
-    <ul><li>SPA</li></ul>
-    <ul><li>SQLite</li></ul>
-</details>
+-  [Typescript](https://www.typescriptlang.org/)
+-  [Node.js](https://nodejs.org/en/)
+-  [ReactJS](https://reactjs.org/)
+-  [React Native](http://facebook.github.io/react-native/)
+-  [Expo](https://expo.io/)
+-  [Express](https://expressjs.com/)
+-  [axios](https://github.com/axios/axios)
+
 
 <details>
     <summary>Web</summary>
@@ -63,55 +73,39 @@ Proffy - Desenvolvido durante o evento NLW 2# by @Rocketseat
 </ul>
 
 ## :arrow_forward: Executando
+ 
+ 1. Faça um clone do repositório:
 
-#### Backend:
-> Vamos clonar o repositório e instalar as dependencias.
 ```sh
-# Clonando o repositório
-git clone https://github.com/davibrandao18/proffy.gi
-
-# Acessando o backend
-cd proffy/server
-
-# instalando as dependencias do backend
-npm install
+  $ git clone https://github.com/HigorSnt/proffy.git
 ```
 
-#### Banco de dados:
+2. Executando a Aplicação:
 
-> Ainda dentro do diretório server vamos rodar as migrations.
 ```sh
-# run migrations
-npm run knex:migrate
-```
-> Para finalizar inicie o servidor:
-```sh
-npm start
+  # API
+  $ cd server
+  # Instalando as dependências do projeto.
+  $ yarn # ou npm install
+  # Configurando o banco de dados e criando as tabelas.
+  $ yarn knex:migrate # ou npm run knex:migrate
+
+  # Inicie a API
+  $ yarn start # ou npm start
+
+  # Aplicação web
+  $ cd web
+  # Instalando as dependências do projeto.
+  $ yarn # ou npm install
+  # Inicie a aplicação web
+  $ yarn start # ou npm start
+
+  # Aplicação mobile
+  $ cd mobile
+  # Instalando as dependências do projeto.
+  $ yarn # ou npm install
+  # Inicie a aplicação mobile
+  $ yarn start # ou npm start
 ```
 
-#### Frontend:
-
-> Acesse o diretório web para instalar as dependencias.
-```sh
-cd /web
-npm install
-npm start
-```
-
-#### Mobile:
-> Inicie a aplicação e obtenha sua URL
-```sh
-cd /mobile
-npm install
-npm start
-```
-<details>
-    <summary>Print</summary>
-    <img src="https://user-images.githubusercontent.com/50588380/89908957-ee852e80-dbc4-11ea-9a40-a55a1c1384ae.png" />
-</details>
-
-> Neste passo será necessário alterar o ip no arquivo <a href="https://github.com/doctorget/NLW/blob/master/mobile/src/services/api.ts">api.ts</a>
-```js
-baseURL: 'http://196.168.0.18:3333', //example
-```
-> A porta pode ser mantida como 3333 pois foi definida no server.
+<sup>Projeto desenvolvido com o tutorial de [Diego Fernandes](https://github.com/diego3g), da [Rocketseat](rocketseat.com.br).</sup>
