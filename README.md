@@ -1,5 +1,8 @@
-<h1 align="center">📗 Proffy</h1>
+<h1 align="center">📗 Proffy
 <img alt="Proffy" src=".github/logo.svg" height="100px" />
+ <br>Next Level Week #2<br/>
+    Node.js | ReactJS | React Native
+</h1>
 
 <p align="center">
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/doctorget/NLW?color=">
